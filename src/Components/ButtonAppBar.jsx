@@ -7,7 +7,7 @@ import Switch from "@mui/material/Switch";
 
 const label = { inputProps: { "aria-label": "Switch demo" } };
 
-export const ButtonAppBar = () => {
+export const ButtonAppBar = ({ check, change }) => {
   return (
     <Box sx={{ flexGrow: 1 }}>
       <AppBar position="static">
@@ -15,7 +15,7 @@ export const ButtonAppBar = () => {
           <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
             Sushmita
           </Typography>
-          <Switch {...label} defaultChecked />
+          <Switch {...label} defaultChecked onChange={change} checked={check} />
         </Toolbar>
       </AppBar>
     </Box>
