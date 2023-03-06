@@ -1,0 +1,48 @@
+.navBar{
+    background-color: aliceblue;
+    display: flex;
+    flex-direction: row;
+    min-height: 2.5rem;
+}
+.logo{
+    font-weight: bold;
+    margin: 1rem 0.5rem;
+}
+.right{
+    display: flex;
+    flex-direction: row;
+    margin-left: 72rem;
+    justify-content: space-between;
+}
+.detailBtn{
+    background-color: red;
+    color: black;
+    font-weight: bold;
+    margin: 0.5rem 0.5rem;
+    border-radius: 0.5rem;
+    min-height: 3rem;
+}
+.userName{
+    color: blue;
+    font-weight: bold;
+    margin: 1rem 0.5rem;
+}
+.switch{
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+}
+.switch input{
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+.slide{
+    position:absolute;
+    cursor: pointer;
+    top:0;
+    left:0;
+    
+}
+
