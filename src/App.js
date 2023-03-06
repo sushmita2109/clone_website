@@ -1,12 +1,21 @@
-import logo from "./logo.svg";
 import "./App.css";
-import { Navbar } from "./Components/Navbar";
+import { ButtonAppBar } from "./Components/ButtonAppBar";
+import { ThemeProvider, createTheme } from "@material-ui/core/styles";
+import { Paper } from "@material-ui/core";
 
 function App() {
+  const theme = createTheme({
+    pallet: {
+      mode: "dark",
+    },
+  });
   return (
-    <div className="App">
-      <Navbar />
-    </div>
+    <ThemeProvider theme={theme}>
+      <Paper>
+        <ButtonAppBar />
+        <h1>Dark Mode</h1>
+      </Paper>
+    </ThemeProvider>
   );
 }
 
