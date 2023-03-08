@@ -15,7 +15,7 @@ export const ButtonAppBar = ({ check, change }) => {
           <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
             Sushmita
           </Typography>
-          <Switch {...label} defaultChecked onChange={change} checked={check} />
+          <Switch {...label} defaultChecked onClick={change} checked={check} />
         </Toolbar>
       </AppBar>
     </Box>
